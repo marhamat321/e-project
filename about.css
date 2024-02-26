@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    
+    background-color: #fff ;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+a:hover{
+    color: orange;
+}
+/* HEADER */
+header{
+    position: relative;
+    padding: 0 2rem;
+    background-color: black;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    padding-top: 10px;
+} 
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_btn{
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;   
+}
+.action_btn:active{
+    scale: 0.95;
+}
+/* DROPDOWN MENU */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about-us{
+    height: 150vh;
+    width: 100%;
+    padding: 90px 0;
+    background: #fff
+    
+  }
+  .pic{
+    height: auto;
+    width:  302px;
+    
+  }
+  .about{
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .text{
+    width: 540px;
+  }
+  .text h2{
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  h1{
+    width: 100%;
+    height: 200px;
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-left: 400px;
+  }
+  .text h5{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  span{
+    color: #4070f4;
+  }
+  .text p{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  .data{
+    margin-top: 30px;
+  }
+  .hire{
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  .hire:hover{
+    background: #000;
+    border: 1px solid #4070f4;
+  }
+.name {
+    width: 100%;
+    padding-left: 400px;
+    display: flex;
+    margin:10px;
+}
+
+
+
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: black;
+}
+.logo2{
+    height: 100px;
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.logo3{
+    text-decoration: none;
+    color:white;
+    font-size: 2rem;
+}
+.icon{
+    width: 50%;
+    height: 100px;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 400px;
+    box-sizing: border-box;
+}
+.fa-facebook{
+    cursor:pointer;
+    color: #fff;
+} 
+.fa-facebook:hover{
+    color: orange;
+}
+.fa-instagram{
+    cursor:pointer;
+    color: #fff;
+}
+.fa-instagram:hover{
+    color: orange;
+}
+.fa-youtube{
+    cursor:pointer;
+    color: #fff;
+}
+.fa-youtube:hover{
+    color: orange;
+}
+.fa-x-twitter{
+    cursor:pointer;
+    color: #fff;
+}
+.fa-x-twitter:hover{
+    color: orange;
+}
+.fa-address-book{
+    cursor: pointer;
+    color: #fff;
+}
+.fa-address-book:hover{
+    color: orange;
+}
+.copy-right{
+    width: 100%;
+    height: 100px;
+    padding-left: 500px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: black;
+    
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block ;
+    }
+}
+@media (max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+
+    
+}
